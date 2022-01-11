@@ -5,3 +5,6 @@ from tackle_api import models
 
 admin.site.register(models.Student)
 admin.site.register(models.Courses)
+
+class StudentAdmin(admin.ModelAdmin):
+    list_display = ["roll_no","name","city"]
